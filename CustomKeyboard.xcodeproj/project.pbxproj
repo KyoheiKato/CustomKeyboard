@@ -19,6 +19,7 @@
 		B2E92F1B1A7749D6008CA80E /* USKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E92F1A1A7749D6008CA80E /* USKeyView.xib */; };
 		B2E92F1D1A774C02008CA80E /* KeyInputObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F1C1A774C02008CA80E /* KeyInputObserver.swift */; };
 		B2E92F1F1A774F36008CA80E /* KeyViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F1E1A774F36008CA80E /* KeyViewManager.swift */; };
+		B2E92F211A7754E2008CA80E /* JPKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F201A7754E2008CA80E /* JPKeyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B2E92F1A1A7749D6008CA80E /* USKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = USKeyView.xib; sourceTree = "<group>"; };
 		B2E92F1C1A774C02008CA80E /* KeyInputObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyInputObserver.swift; sourceTree = "<group>"; };
 		B2E92F1E1A774F36008CA80E /* KeyViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyViewManager.swift; sourceTree = "<group>"; };
+		B2E92F201A7754E2008CA80E /* JPKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPKeyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				B2E92F1A1A7749D6008CA80E /* USKeyView.xib */,
 				B2E92F1C1A774C02008CA80E /* KeyInputObserver.swift */,
 				B2E92F1E1A774F36008CA80E /* KeyViewManager.swift */,
+				B2E92F201A7754E2008CA80E /* JPKeyView.swift */,
 			);
 			path = ArrowKeyboard;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				B2E92F1F1A774F36008CA80E /* KeyViewManager.swift in Sources */,
 				B2E92F1D1A774C02008CA80E /* KeyInputObserver.swift in Sources */,
+				B2E92F211A7754E2008CA80E /* JPKeyView.swift in Sources */,
 				B2E92F101A7748D6008CA80E /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
