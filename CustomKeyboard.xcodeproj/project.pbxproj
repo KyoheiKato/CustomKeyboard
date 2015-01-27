@@ -18,6 +18,7 @@
 		B2E92F191A7749C6008CA80E /* JPKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E92F181A7749C6008CA80E /* JPKeyView.xib */; };
 		B2E92F1B1A7749D6008CA80E /* USKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E92F1A1A7749D6008CA80E /* USKeyView.xib */; };
 		B2E92F1D1A774C02008CA80E /* KeyInputObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F1C1A774C02008CA80E /* KeyInputObserver.swift */; };
+		B2E92F1F1A774F36008CA80E /* KeyViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F1E1A774F36008CA80E /* KeyViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B2E92F181A7749C6008CA80E /* JPKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPKeyView.xib; sourceTree = "<group>"; };
 		B2E92F1A1A7749D6008CA80E /* USKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = USKeyView.xib; sourceTree = "<group>"; };
 		B2E92F1C1A774C02008CA80E /* KeyInputObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyInputObserver.swift; sourceTree = "<group>"; };
+		B2E92F1E1A774F36008CA80E /* KeyViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyViewManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				B2E92F181A7749C6008CA80E /* JPKeyView.xib */,
 				B2E92F1A1A7749D6008CA80E /* USKeyView.xib */,
 				B2E92F1C1A774C02008CA80E /* KeyInputObserver.swift */,
+				B2E92F1E1A774F36008CA80E /* KeyViewManager.swift */,
 			);
 			path = ArrowKeyboard;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E92F1F1A774F36008CA80E /* KeyViewManager.swift in Sources */,
 				B2E92F1D1A774C02008CA80E /* KeyInputObserver.swift in Sources */,
 				B2E92F101A7748D6008CA80E /* KeyboardViewController.swift in Sources */,
 			);
@@ -540,6 +544,7 @@
 				B2E92F031A77455C008CA80E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2E92F041A77455C008CA80E /* Build configuration list for PBXNativeTarget "CustomKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +553,7 @@
 				B2E92F061A77455C008CA80E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2E92F141A7748D6008CA80E /* Build configuration list for PBXNativeTarget "ArrowKeyboard" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +562,7 @@
 				B2E92F161A7748D6008CA80E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
