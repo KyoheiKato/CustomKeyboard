@@ -21,15 +21,15 @@ class KeyboardViewController: UIInputViewController, CommonViewControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        appendUIViews()
         
-        self.view.addSubview(keyLayoutView)
-    
+        self.view.addSubview(keyViewControllers[0].view)
     }
     
     func appendUIViews(){
         keyViewControllers.append(JPKeyViewController())
         keyViewControllers.append(USKeyViewController())
-        
+        keyViewControllers.append(MarkKeyViewController())
     }
 
     @IBAction func moveNextKeyboard(sender: AnyObject) {
@@ -48,14 +48,14 @@ class KeyboardViewController: UIInputViewController, CommonViewControllerDelegat
     override func textDidChange(textInput: UITextInput) {
         // The app has just changed the document's contents, the document context has been updated.
     
-        var textColor: UIColor
-        var proxy = self.textDocumentProxy as UITextDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
-            textColor = UIColor.whiteColor()
-        } else {
-            textColor = UIColor.blackColor()
-        }
-        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+//        var textColor: UIColor
+//        var proxy = self.textDocumentProxy as UITextDocumentProxy
+//        if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
+//            textColor = UIColor.whiteColor()
+//        } else {
+//            textColor = UIColor.blackColor()
+//        }
+//        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
     }
     
     //MARK: CommonViewControllerDelegate
