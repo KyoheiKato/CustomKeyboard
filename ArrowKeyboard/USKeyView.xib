@@ -6,7 +6,97 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="USKeyViewController" customModule="ArrowKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="enterKeyButton" destination="olD-hQ-ry0" id="xuZ-9I-95t"/>
                 <outlet property="moveMarkKey" destination="Y9l-W7-PdF" id="TnH-bz-5r6"/>
+                <outlet property="moveMarkKeyButton" destination="Y9l-W7-PdF" id="nlU-lk-XRj"/>
+                <outlet property="nextKeyboardButton" destination="NHF-qP-LeK" id="NUa-Ya-DT5"/>
+                <outlet property="shiftKey" destination="53B-6K-Z1p" id="veT-lB-1VE"/>
+                <outlet property="shiftKeyButton" destination="53B-6K-Z1p" id="GJ7-fv-5nS"/>
+                <outletCollection property="numberKey" destination="msE-zf-hMH" collectionClass="NSMutableArray" id="XlR-6X-ozZ"/>
+                <outletCollection property="numberKey" destination="gdh-wK-ezY" collectionClass="NSMutableArray" id="AtJ-0g-2Rd"/>
+                <outletCollection property="numberKey" destination="upL-r2-yXb" collectionClass="NSMutableArray" id="Mqa-wy-v46"/>
+                <outletCollection property="numberKey" destination="c1K-y4-Qap" collectionClass="NSMutableArray" id="H6U-ap-vc0"/>
+                <outletCollection property="numberKey" destination="jfq-dX-EPv" collectionClass="NSMutableArray" id="3Bf-cf-g11"/>
+                <outletCollection property="numberKey" destination="njY-qC-TKE" collectionClass="NSMutableArray" id="hmw-45-D11"/>
+                <outletCollection property="numberKey" destination="4pF-t3-F2n" collectionClass="NSMutableArray" id="rcJ-Q3-blc"/>
+                <outletCollection property="numberKey" destination="frC-IQ-4QK" collectionClass="NSMutableArray" id="bet-mR-gw3"/>
+                <outletCollection property="numberKey" destination="Wfe-yk-5zq" collectionClass="NSMutableArray" id="4LU-TU-zZZ"/>
+                <outletCollection property="alphabetKeys" destination="voh-U4-58D" collectionClass="NSMutableArray" id="V0W-oG-3BQ"/>
+                <outletCollection property="alphabetKeys" destination="W5i-7w-KsH" collectionClass="NSMutableArray" id="nSU-H1-tMN"/>
+                <outletCollection property="alphabetKeys" destination="tVG-q3-UFn" collectionClass="NSMutableArray" id="7aT-cB-c9d"/>
+                <outletCollection property="alphabetKeys" destination="Tfc-HD-ukb" collectionClass="NSMutableArray" id="3mh-Mw-Pih"/>
+                <outletCollection property="alphabetKeys" destination="ZJn-x1-NTu" collectionClass="NSMutableArray" id="guQ-fb-NLj"/>
+                <outletCollection property="alphabetKeys" destination="f6d-3J-CRi" collectionClass="NSMutableArray" id="6dP-li-I5m"/>
+                <outletCollection property="alphabetKeys" destination="pgg-o1-ea7" collectionClass="NSMutableArray" id="Vxn-Ap-FEO"/>
+                <outletCollection property="alphabetKeys" destination="h6N-c1-Itu" collectionClass="NSMutableArray" id="cUt-Vg-U8d"/>
+                <outletCollection property="alphabetKeys" destination="kAt-JF-Zb2" collectionClass="NSMutableArray" id="NxS-Mf-Qxu"/>
+                <outletCollection property="alphabetKeys" destination="HoU-uV-crg" collectionClass="NSMutableArray" id="KJC-8T-5lc"/>
+                <outletCollection property="alphabetKeys" destination="Fqx-VE-Pve" collectionClass="NSMutableArray" id="F0p-1x-bKV"/>
+                <outletCollection property="alphabetKeys" destination="OYm-PQ-t1g" collectionClass="NSMutableArray" id="UJg-2D-dw6"/>
+                <outletCollection property="alphabetKeys" destination="Oow-UK-Y1w" collectionClass="NSMutableArray" id="dRI-I4-kWp"/>
+                <outletCollection property="alphabetKeys" destination="CCu-sa-Ps8" collectionClass="NSMutableArray" id="b6A-Nx-eeX"/>
+                <outletCollection property="alphabetKeys" destination="ytg-hf-Kwu" collectionClass="NSMutableArray" id="lIh-oX-7Yq"/>
+                <outletCollection property="alphabetKeys" destination="XBf-2W-3Fn" collectionClass="NSMutableArray" id="XJs-3J-mmb"/>
+                <outletCollection property="alphabetKeys" destination="4EQ-rH-egJ" collectionClass="NSMutableArray" id="bbL-NX-fjK"/>
+                <outletCollection property="alphabetKeys" destination="kzK-af-J80" collectionClass="NSMutableArray" id="Sxf-QL-vEs"/>
+                <outletCollection property="alphabetKeys" destination="hyx-Zw-7go" collectionClass="NSMutableArray" id="Fj9-cO-brd"/>
+                <outletCollection property="alphabetKeys" destination="bQR-d7-y3v" collectionClass="NSMutableArray" id="0Gs-1a-Tg0"/>
+                <outletCollection property="alphabetKeys" destination="d6t-CU-YFP" collectionClass="NSMutableArray" id="gqa-GR-kAi"/>
+                <outletCollection property="alphabetKeys" destination="koO-Ni-Oav" collectionClass="NSMutableArray" id="g0B-Gn-5GJ"/>
+                <outletCollection property="alphabetKeys" destination="taB-Zg-pMQ" collectionClass="NSMutableArray" id="4Oa-qR-eo4"/>
+                <outletCollection property="alphabetKeys" destination="h5H-z4-rUV" collectionClass="NSMutableArray" id="JPV-08-Enx"/>
+                <outletCollection property="alphabetKeys" destination="v1b-SY-KJo" collectionClass="NSMutableArray" id="qBK-R8-i9x"/>
+                <outletCollection property="alphabetKeys" destination="jII-aQ-Blw" collectionClass="NSMutableArray" id="NKZ-yZ-nGO"/>
+                <outletCollection property="numberKeys" destination="msE-zf-hMH" collectionClass="NSMutableArray" id="VeM-Yy-K4E"/>
+                <outletCollection property="numberKeys" destination="gdh-wK-ezY" collectionClass="NSMutableArray" id="BaU-3c-wcZ"/>
+                <outletCollection property="numberKeys" destination="upL-r2-yXb" collectionClass="NSMutableArray" id="BJz-UH-NHN"/>
+                <outletCollection property="numberKeys" destination="c1K-y4-Qap" collectionClass="NSMutableArray" id="5QX-PX-YmI"/>
+                <outletCollection property="numberKeys" destination="rBH-0W-aUc" collectionClass="NSMutableArray" id="daJ-tw-IeJ"/>
+                <outletCollection property="numberKeys" destination="jfq-dX-EPv" collectionClass="NSMutableArray" id="CZG-iv-Qwd"/>
+                <outletCollection property="numberKeys" destination="njY-qC-TKE" collectionClass="NSMutableArray" id="osd-J6-la3"/>
+                <outletCollection property="numberKeys" destination="4pF-t3-F2n" collectionClass="NSMutableArray" id="3MK-uT-GyL"/>
+                <outletCollection property="numberKeys" destination="frC-IQ-4QK" collectionClass="NSMutableArray" id="cgh-78-rvo"/>
+                <outletCollection property="numberKeys" destination="Wfe-yk-5zq" collectionClass="NSMutableArray" id="Jwv-jQ-RHH"/>
+                <outletCollection property="numberKeyButtons" destination="msE-zf-hMH" collectionClass="NSMutableArray" id="vQz-4I-gnO"/>
+                <outletCollection property="numberKeyButtons" destination="gdh-wK-ezY" collectionClass="NSMutableArray" id="QAO-6f-ABx"/>
+                <outletCollection property="numberKeyButtons" destination="upL-r2-yXb" collectionClass="NSMutableArray" id="gTl-95-pTt"/>
+                <outletCollection property="numberKeyButtons" destination="c1K-y4-Qap" collectionClass="NSMutableArray" id="D2R-ij-1RV"/>
+                <outletCollection property="numberKeyButtons" destination="jfq-dX-EPv" collectionClass="NSMutableArray" id="d6W-j3-c8A"/>
+                <outletCollection property="numberKeyButtons" destination="njY-qC-TKE" collectionClass="NSMutableArray" id="rjZ-J9-hGh"/>
+                <outletCollection property="numberKeyButtons" destination="4pF-t3-F2n" collectionClass="NSMutableArray" id="fHJ-wS-PJS"/>
+                <outletCollection property="numberKeyButtons" destination="frC-IQ-4QK" collectionClass="NSMutableArray" id="mHf-K5-MiM"/>
+                <outletCollection property="numberKeyButtons" destination="Wfe-yk-5zq" collectionClass="NSMutableArray" id="PMc-Hm-gwF"/>
+                <outletCollection property="numberKeyButtons" destination="rBH-0W-aUc" collectionClass="NSMutableArray" id="Erp-T3-3Ei"/>
+                <outletCollection property="alphabetKeyButtons" destination="voh-U4-58D" collectionClass="NSMutableArray" id="r5M-Ud-djW"/>
+                <outletCollection property="alphabetKeyButtons" destination="W5i-7w-KsH" collectionClass="NSMutableArray" id="f72-UN-dwt"/>
+                <outletCollection property="alphabetKeyButtons" destination="tVG-q3-UFn" collectionClass="NSMutableArray" id="n6R-5c-yUI"/>
+                <outletCollection property="alphabetKeyButtons" destination="Tfc-HD-ukb" collectionClass="NSMutableArray" id="KO2-Mr-YRz"/>
+                <outletCollection property="alphabetKeyButtons" destination="ZJn-x1-NTu" collectionClass="NSMutableArray" id="jlO-Ro-bZW"/>
+                <outletCollection property="alphabetKeyButtons" destination="f6d-3J-CRi" collectionClass="NSMutableArray" id="Eds-Lo-3jV"/>
+                <outletCollection property="alphabetKeyButtons" destination="pgg-o1-ea7" collectionClass="NSMutableArray" id="tQz-Rh-krZ"/>
+                <outletCollection property="alphabetKeyButtons" destination="h6N-c1-Itu" collectionClass="NSMutableArray" id="IKl-Ob-lfH"/>
+                <outletCollection property="alphabetKeyButtons" destination="kAt-JF-Zb2" collectionClass="NSMutableArray" id="30B-KI-00q"/>
+                <outletCollection property="alphabetKeyButtons" destination="HoU-uV-crg" collectionClass="NSMutableArray" id="EVU-MK-Qbo"/>
+                <outletCollection property="alphabetKeyButtons" destination="Fqx-VE-Pve" collectionClass="NSMutableArray" id="qnW-li-sIS"/>
+                <outletCollection property="alphabetKeyButtons" destination="OYm-PQ-t1g" collectionClass="NSMutableArray" id="OCq-rd-Fcc"/>
+                <outletCollection property="alphabetKeyButtons" destination="Oow-UK-Y1w" collectionClass="NSMutableArray" id="8Hv-3v-Rf0"/>
+                <outletCollection property="alphabetKeyButtons" destination="CCu-sa-Ps8" collectionClass="NSMutableArray" id="tLK-Aj-Brx"/>
+                <outletCollection property="alphabetKeyButtons" destination="ytg-hf-Kwu" collectionClass="NSMutableArray" id="mSl-Zj-2c9"/>
+                <outletCollection property="alphabetKeyButtons" destination="XBf-2W-3Fn" collectionClass="NSMutableArray" id="fEq-dX-JnH"/>
+                <outletCollection property="alphabetKeyButtons" destination="4EQ-rH-egJ" collectionClass="NSMutableArray" id="7p0-TW-LIt"/>
+                <outletCollection property="alphabetKeyButtons" destination="kzK-af-J80" collectionClass="NSMutableArray" id="eoP-Kw-rZl"/>
+                <outletCollection property="alphabetKeyButtons" destination="hyx-Zw-7go" collectionClass="NSMutableArray" id="0i7-vd-5q4"/>
+                <outletCollection property="alphabetKeyButtons" destination="bQR-d7-y3v" collectionClass="NSMutableArray" id="kev-4B-gbA"/>
+                <outletCollection property="alphabetKeyButtons" destination="d6t-CU-YFP" collectionClass="NSMutableArray" id="5bX-UD-Hh0"/>
+                <outletCollection property="alphabetKeyButtons" destination="koO-Ni-Oav" collectionClass="NSMutableArray" id="MSf-iG-Ct9"/>
+                <outletCollection property="alphabetKeyButtons" destination="taB-Zg-pMQ" collectionClass="NSMutableArray" id="y0w-Lo-ajx"/>
+                <outletCollection property="alphabetKeyButtons" destination="h5H-z4-rUV" collectionClass="NSMutableArray" id="1X4-ga-Sdu"/>
+                <outletCollection property="alphabetKeyButtons" destination="v1b-SY-KJo" collectionClass="NSMutableArray" id="XQ8-yu-ll1"/>
+                <outletCollection property="alphabetKeyButtons" destination="jII-aQ-Blw" collectionClass="NSMutableArray" id="0bq-cF-3tO"/>
+                <outletCollection property="directionKeyButtons" destination="jIM-p6-zTB" collectionClass="NSMutableArray" id="8ct-vO-tNa"/>
+                <outletCollection property="directionKeyButtons" destination="e3h-g1-psf" collectionClass="NSMutableArray" id="A9m-ys-2wQ"/>
+                <outletCollection property="directionKeyButtons" destination="XH4-j2-aSv" collectionClass="NSMutableArray" id="8l4-HA-wNO"/>
+                <outletCollection property="directionKeyButtons" destination="tGI-NO-fhi" collectionClass="NSMutableArray" id="xSt-hb-yhM"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -302,19 +392,6 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIM-p6-zTB">
-                    <rect key="frame" x="607" y="85" width="74" height="51"/>
-                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                    <state key="normal" title="↑">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH4-j2-aSv">
                     <rect key="frame" x="684" y="139" width="74" height="51"/>
                     <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -399,6 +476,19 @@
                     <state key="normal" title="Shift">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIM-p6-zTB">
+                    <rect key="frame" x="607" y="86" width="74" height="51"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="↑">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>

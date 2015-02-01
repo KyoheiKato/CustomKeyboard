@@ -11,7 +11,13 @@ import UIKit
 
 class USKeyViewController: BaseViewController {
     
-    @IBOutlet weak var moveMarkKey: UIButton!
+    @IBOutlet var numberKeyButtons: [UIButton]!
+    @IBOutlet var alphabetKeyButtons: [UIButton]!
+    @IBOutlet weak var shiftKeyButton: UIButton!
+    @IBOutlet weak var moveMarkKeyButton: UIButton!
+    @IBOutlet weak var nextKeyboardButton: UIButton!
+    @IBOutlet var directionKeyButtons: [UIButton]!
+    @IBOutlet weak var enterKeyButton: UIButton!
     
     var upperFlag:Bool!
     
@@ -20,7 +26,7 @@ class USKeyViewController: BaseViewController {
     }
     
     func initField() {
-        moveMarkKey.tag = 2;
+        moveMarkKeyButton.tag = 2;
         upperFlag = false
     }
     
