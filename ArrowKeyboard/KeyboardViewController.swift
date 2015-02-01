@@ -8,9 +8,9 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController, CommonViewControllerDelegate {
 
-    @IBOutlet var nextKeyboardButton: UIButton!
+    var keyViewControllers:[UIViewController]!
 
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -21,22 +21,21 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton.buttonWithType(.System) as UIButton
-    
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
-    
-        self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
-        self.view.addSubview(self.nextKeyboardButton)
+        self.view.addSubview(keyLayoutView)
     
-        var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
-        var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-        self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
+    }
+    
+    func appendUIViews(){
+        keyViewControllers.append(JPKeyViewController())
+        keyViewControllers.append(USKeyViewController())
+        
     }
 
+    @IBAction func moveNextKeyboard(sender: AnyObject) {
+        self.advanceToNextInputMode()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated
@@ -57,6 +56,15 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
         self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+    }
+    
+    //MARK: CommonViewControllerDelegate
+    func moveNextKeyboard() {
+        self.advanceToNextInputMode()
+    }
+    
+    func changeKeyView(senderTag: Int) {
+        
     }
 
 }
