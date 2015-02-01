@@ -11,14 +11,14 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    var commonViewController:CommonViewControllerDelegate!
+    var baseViewController:BaseViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-protocol CommonViewControllerDelegate {
+protocol BaseViewControllerDelegate {
     func moveNextKeyboard()
     
     func changeKeyView(senderTag: Int)

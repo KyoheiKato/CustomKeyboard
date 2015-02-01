@@ -35,6 +35,6 @@ class USKeyViewController: BaseViewController {
     }
     
     @IBAction func changeKeyView(sender: UIButton) {
-        super.commonViewController.changeKeyView(sender.tag)
+        super.baseViewController.changeKeyView(sender.tag)
     }
 }
