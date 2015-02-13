@@ -120,7 +120,11 @@ class KeyboardViewController: UIInputViewController{
     
     //JP key funcs
     func redrawJPKeys() {
-        
+        var displayJPArray = JPArray[JPArrayIndex % 10]
+        var i = 0
+        for button:UIButton in JPKeys {
+            button.setTitle(displayJPArray[i++], forState: .Normal)
+        }
     }
     
     //share key funcs
@@ -157,20 +161,12 @@ class KeyboardViewController: UIInputViewController{
         }else {
             JPArrayIndex--
         }
-        var displayJPArray = JPArray[JPArrayIndex % 10]
-        var i = 0
-        for button:UIButton in JPKeys {
-            button.setTitle(displayJPArray[i++], forState: .Normal)
-        }
+        redrawJPKeys()
     }
     
     @IBAction func downJPKeys(sender: UIButton) {
         JPArrayIndex++
-        var displayJPArray = JPArray[JPArrayIndex % 10]
-        var i = 0
-        for button:UIButton in JPKeys {
-            button.setTitle(displayJPArray[i++], forState: .Normal)
-        }
+        redrawJPKeys()
     }
     
     @IBAction func moveLeftJPKey(sender: UIButton) {
