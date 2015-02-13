@@ -20,9 +20,12 @@ class KeyboardViewController: UIInputViewController{
     @IBOutlet var alphabetKeys: [UIButton]!
     @IBOutlet var USKeys: [UIButton]!
     
-    
     //JP key outlet
     @IBOutlet var JPKeys: [UIButton]!
+    
+    //Mark key outlet
+    @IBOutlet var markKeys: [UIButton]!
+    @IBOutlet weak var swapJP: UIButton!
     
     //US key value
     var shiftStatus:Bool = false
@@ -43,6 +46,19 @@ class KeyboardViewController: UIInputViewController{
     var JPArrayIndex:Int = 0
     var targettingJPKey:UIButton!
     var targettingJPTag = 0
+    
+    //Mark key value
+    let swapArray:[String] = ["全角", "半角"]
+    let markHalfArray:[String] = ["+", "-", "*", "/", "%", "=", "&", "|",
+                                  ",", ".", "!", "?", "'", "\"", ";", ":",
+                                  "(", ")", "{", "}", "[", "]", "<", ">",
+                                  "@", "#", "^", "$", "_", "\\", "`", "~"]
+    let markEmArray:[String] = ["＋", "ー", "＊", "／", "％", "＝", "＆", "｜",
+                                "、", "。", "！", "？", "’", "”", "；", "：",
+                                "（", "）", "｛", "｝", "「", "」", "＜", "＞",
+                                "＠", "＃", "＾", "＄", "＿", "￥", "｀", "〜"]
+    var halfStatus = true
+    
 
 
     override func updateViewConstraints() {
@@ -131,6 +147,19 @@ class KeyboardViewController: UIInputViewController{
         }
     }
     
+    //Mark key funcs
+    func redrawMarkKeys() {
+        if halfStatus {
+            for button:UIButton in markKeys {
+                button.setTitle(markHalfArray[button.tag-1], forState: .Normal)
+            }
+        }else {
+            for button:UIButton in markKeys {
+                button.setTitle(markEmArray[button.tag-1], forState: .Normal)
+            }
+        }
+    }
+    
     //share key funcs
     func getNextTargetKey(targettingKey:UIButton, targettingKeys:[UIButton], tag:Int) -> UIButton{
         targettingKey.backgroundColor = UIColor.whiteColor()
@@ -141,7 +170,6 @@ class KeyboardViewController: UIInputViewController{
         }
         return UIButton()
     }
-    
     
     //US key actions
     @IBAction func changeShiftStatus(sender: UIButton) {
@@ -251,7 +279,17 @@ class KeyboardViewController: UIInputViewController{
         proxy.insertText(targettingJPKey.currentTitle!)
     }
     
-    //share key funcs
+    //Mark key actions
+    @IBAction func swapMarkKey(sender: UIButton) {
+        if halfStatus {
+            halfStatus = false
+        }else {
+            halfStatus = true
+        }
+        redrawMarkKeys()
+    }
+    
+    //share key actions
     @IBAction func inputCharacter(sender: UIButton) {
         let proxy = self.textDocumentProxy as UITextDocumentProxy
         proxy.insertText(sender.currentTitle!)
