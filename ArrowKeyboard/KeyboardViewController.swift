@@ -26,7 +26,8 @@ class KeyboardViewController: UIInputViewController{
     
     //US key value
     var shiftStatus:Bool = false
-    var tagettingUSKey:UIButton!
+    var targettingUSKey:UIButton!
+    var targettingUSTag = 1
     
     //JP key value
     let JPArray:[[String]] = [["あ", "い", "う", "え", "お"],
@@ -70,7 +71,10 @@ class KeyboardViewController: UIInputViewController{
     
     func setTargetKey() {
         for button:UIButton in USKeys {
-            
+            if button.tag == 1 {
+                targettingUSKey = button
+                targettingUSKey.backgroundColor = UIColor.grayColor()
+            }
         }
         for button:UIButton in JPKeys {
             if button.tag == 1 {
@@ -128,9 +132,9 @@ class KeyboardViewController: UIInputViewController{
     }
     
     //share key funcs
-    func redrawTargetKey(targetKey:UIButton, targetKeys:[UIButton], tag:Int) -> UIButton{
-        targettingJPKey.backgroundColor = UIColor.whiteColor()
-        for button:UIButton in targetKeys {
+    func getNextTargetKey(targettingKey:UIButton, targettingKeys:[UIButton], tag:Int) -> UIButton{
+        targettingKey.backgroundColor = UIColor.whiteColor()
+        for button:UIButton in targettingKeys {
             if button.tag == tag {
                 return button
             }
@@ -140,11 +144,6 @@ class KeyboardViewController: UIInputViewController{
     
     
     //US key actions
-    @IBAction func inputCharacter(sender: UIButton) {
-        let proxy = self.textDocumentProxy as UITextDocumentProxy
-        proxy.insertText(sender.currentTitle!)
-    }
-    
     @IBAction func changeShiftStatus(sender: UIButton) {
         if shiftStatus {
             shiftStatus = false
@@ -152,6 +151,63 @@ class KeyboardViewController: UIInputViewController{
             shiftStatus = true
         }
         redrawAlphabetKeys()
+    }
+    
+    @IBAction func moveUpUSKey(sender: UIButton) {
+        if targettingUSTag%5 == 1 {
+            if targettingUSTag == 1 || targettingUSTag == 41  {
+                targettingUSTag += 2
+            }else if targettingUSTag == 46 {
+                targettingUSTag++
+            }else {
+                targettingUSTag += 3
+            }
+        }else {
+            targettingUSTag--
+        }
+        targettingUSKey = getNextTargetKey(targettingUSKey, targettingKeys: USKeys, tag: targettingUSTag)
+        targettingUSKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func moveDownUSKey(sender: UIButton) {
+        if targettingUSTag%5 == 4{
+            targettingUSTag -= 3
+        }else if targettingUSTag == 3 || targettingUSTag == 41 {
+            targettingUSTag -= 2
+        }else if targettingUSTag == 47{
+            targettingUSTag--
+        }else {
+            targettingUSTag++
+        }
+        targettingUSKey = getNextTargetKey(targettingUSKey, targettingKeys: USKeys, tag: targettingUSTag)
+        targettingUSKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func moveLeftUSKey(sender: UIButton) {
+        if targettingUSTag == 1 || targettingUSTag == 2 || targettingUSTag == 3 {
+            targettingUSTag += 45
+        }else if targettingUSTag == 9 {
+            targettingUSTag += 30
+        }else {
+            targettingUSTag -= 5
+        }
+        targettingUSKey = getNextTargetKey(targettingUSKey, targettingKeys: USKeys, tag: targettingUSTag)
+        targettingUSKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    
+    @IBAction func moveRightUSKey(sender: UIButton) {
+        if targettingUSTag == 46 || targettingUSTag == 47{
+            targettingUSTag -= 45
+        }else if targettingUSTag == 43 {
+            targettingUSTag -= 40
+        }else if targettingUSTag == 39 {
+            targettingUSTag -= 30
+        }else{
+            targettingUSTag += 5
+        }
+        targettingUSKey = getNextTargetKey(targettingUSKey, targettingKeys: USKeys, tag: targettingUSTag)
+        targettingUSKey.backgroundColor = UIColor.grayColor()
     }
     
     //JP key actions
@@ -169,29 +225,38 @@ class KeyboardViewController: UIInputViewController{
         redrawJPKeys()
     }
     
+    @IBAction func submitUSCharacter(sender: UIButton) {
+        let proxy = self.textDocumentProxy as UITextDocumentProxy
+        proxy.insertText(targettingUSKey.currentTitle!)
+    }
+    
     @IBAction func moveLeftJPKey(sender: UIButton) {
         if targettingJPTag == 0 {
             targettingJPTag += 4
         }else {
             targettingJPTag--
         }
-        targettingJPKey = redrawTargetKey(targettingJPKey, targetKeys: JPKeys, tag: targettingJPTag % 5 + 1)
+        targettingJPKey = getNextTargetKey(targettingJPKey, targettingKeys: JPKeys, tag: targettingJPTag % 5 + 1)
         targettingJPKey.backgroundColor = UIColor.grayColor()
     }
     
     @IBAction func moveRightJPKey(sender: UIButton) {
         targettingJPTag++
-        targettingJPKey = redrawTargetKey(targettingJPKey, targetKeys: JPKeys, tag: targettingJPTag % 5 + 1)
+        targettingJPKey = getNextTargetKey(targettingJPKey, targettingKeys: JPKeys, tag: targettingJPTag % 5 + 1)
         targettingJPKey.backgroundColor = UIColor.grayColor()
     }
     
-    @IBAction func submitCharacter(sender: UIButton) {
+    @IBAction func submitJPCharacter(sender: UIButton) {
         let proxy = self.textDocumentProxy as UITextDocumentProxy
         proxy.insertText(targettingJPKey.currentTitle!)
-
     }
     
     //share key funcs
+    @IBAction func inputCharacter(sender: UIButton) {
+        let proxy = self.textDocumentProxy as UITextDocumentProxy
+        proxy.insertText(sender.currentTitle!)
+    }
+    
     @IBAction func inputBackSpace(sender: UIButton) {
         let proxy = self.textDocumentProxy as UITextDocumentProxy
         proxy.deleteBackward()
