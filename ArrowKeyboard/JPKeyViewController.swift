@@ -11,7 +11,13 @@ import UIKit
 
 class JPKeyViewController: BaseViewController {
     
-    @IBOutlet var InputTextButtons: [UIButton]!
+    
+    @IBOutlet var JPKeyButtons: [UIButton]!
+    @IBOutlet weak var nextKeyboardButton: UIButton!
+    @IBOutlet weak var moveUSKeyButton: UIButton!
+    @IBOutlet var directionKeyButtons: [UIButton]!
+    @IBOutlet weak var enterKeyButton: UIButton!
+
     
     let jpArray:[[String]] = [["あ", "い", "う", "え", "お"],
                               ["か", "き", "く", "け", "こ"],
@@ -24,7 +30,7 @@ class JPKeyViewController: BaseViewController {
                               ["ら", "り", "る", "れ", "ろ"],
                               ["わ", "", "を", "", "ん"]]
     var displayingJP:[String]!
-    var jpArrayIndex:Int!
+    var jpArrayIndex:Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,21 +38,17 @@ class JPKeyViewController: BaseViewController {
     }
     
     func initField() {
-        jpArrayIndex = 0
         displayingJP = jpArray[jpArrayIndex]
-        for index in 0...4 {
-            InputTextButtons[index].setTitle(displayingJP[index], forState:UIControlState.Normal)
-        }
-        
+        redrawTextButtons()
     }
     
     func redrawTextButtons() {
         for index in 0...4 {
-            InputTextButtons[index].setTitle(displayingJP[index], forState: UIControlState.Normal)
+            JPKeyButtons[index].setTitle(displayingJP[index], forState: UIControlState.Normal)
         }
     }
     
-    func upDisplayingJP() {
+    @IBAction func upJPArray(sender: AnyObject) {
         if jpArrayIndex == 9 {
             jpArrayIndex = -1
         }
@@ -54,19 +56,15 @@ class JPKeyViewController: BaseViewController {
         redrawTextButtons()
     }
     
-    func downDisplayingJP() {
+    @IBAction func downJPArray(sender: AnyObject) {
         if jpArrayIndex == 0 {
             jpArrayIndex == 10
         }
         displayingJP = jpArray[--jpArrayIndex]
         redrawTextButtons()
-    }
+    }    
     
-    func pushTextButton(pushedButton:UIButton) {
-        pushedButton.backgroundColor = UIColor.grayColor()
-    }
-    
-    func unpushTextButton(pushedButton:UIButton) {
-        pushedButton.backgroundColor = UIColor.whiteColor()
+    @IBAction func moveUSKeyView(sender: UIButton) {
+        super.baseViewControllerDelegate.changeKeyView(sender)
     }
 }

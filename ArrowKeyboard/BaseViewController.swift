@@ -9,17 +9,21 @@
 import Foundation
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIInputViewController {
     
-    var baseViewController:BaseViewControllerDelegate!
+    var baseViewControllerDelegate:BaseViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
 }
 
 protocol BaseViewControllerDelegate {
     func moveNextKeyboard()
     
-    func changeKeyView(senderTag: Int)
+    func changeKeyView(sender: UIButton)
+    
+    func inputCharacter(senderText: String)
 }

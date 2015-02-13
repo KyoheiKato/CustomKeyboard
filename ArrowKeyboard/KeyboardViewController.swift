@@ -20,6 +20,7 @@ class KeyboardViewController: UIInputViewController{
     @IBOutlet var alphabetKeys: [UIButton]!
     @IBOutlet var USKeys: [UIButton]!
     
+    
     //JP key outlet
     @IBOutlet var JPKeys: [UIButton]!
     
@@ -40,6 +41,7 @@ class KeyboardViewController: UIInputViewController{
                               ["わ", "", "を", "", "ん"]]
     var JPArrayIndex:Int = 0
     var targettingJPKey:UIButton!
+    var targettingJPTag = 0
 
 
     override func updateViewConstraints() {
@@ -171,11 +173,26 @@ class KeyboardViewController: UIInputViewController{
         }
     }
     
-    @IBAction func moveLeftKey(sender: UIButton) {
-        
+    @IBAction func moveLeftJPKey(sender: UIButton) {
+        if targettingJPTag == 0 {
+            targettingJPTag += 4
+        }else {
+            targettingJPTag--
+        }
+        targettingJPKey = redrawTargetKey(targettingJPKey, targetKeys: JPKeys, tag: targettingJPTag % 5 + 1)
+        targettingJPKey.backgroundColor = UIColor.grayColor()
     }
     
-    @IBAction func moveRightKey(sender: UIButton) {
+    @IBAction func moveRightJPKey(sender: UIButton) {
+        targettingJPTag++
+        targettingJPKey = redrawTargetKey(targettingJPKey, targetKeys: JPKeys, tag: targettingJPTag % 5 + 1)
+        targettingJPKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func submitCharacter(sender: UIButton) {
+        let proxy = self.textDocumentProxy as UITextDocumentProxy
+        proxy.insertText(targettingJPKey.currentTitle!)
+
     }
     
     //share key funcs
