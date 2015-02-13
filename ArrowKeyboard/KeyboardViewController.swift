@@ -58,8 +58,9 @@ class KeyboardViewController: UIInputViewController{
                                 "（", "）", "｛", "｝", "「", "」", "＜", "＞",
                                 "＠", "＃", "＾", "＄", "＿", "￥", "｀", "〜"]
     var halfStatus = true
+    var targettingMarkKey:UIButton!
+    var targettingMarkTag = 1
     
-
 
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -96,6 +97,12 @@ class KeyboardViewController: UIInputViewController{
             if button.tag == 1 {
                 targettingJPKey = button
                 targettingJPKey.backgroundColor = UIColor.grayColor()
+            }
+        }
+        for button:UIButton in markKeys {
+            if button.tag == 1 {
+                targettingMarkKey = button
+                targettingMarkKey.backgroundColor = UIColor.grayColor()
             }
         }
     }
@@ -200,7 +207,7 @@ class KeyboardViewController: UIInputViewController{
     @IBAction func moveDownUSKey(sender: UIButton) {
         if targettingUSTag%5 == 4{
             targettingUSTag -= 3
-        }else if targettingUSTag == 3 || targettingUSTag == 41 {
+        }else if targettingUSTag == 3 || targettingUSTag == 43 {
             targettingUSTag -= 2
         }else if targettingUSTag == 47{
             targettingUSTag--
@@ -212,8 +219,10 @@ class KeyboardViewController: UIInputViewController{
     }
     
     @IBAction func moveLeftUSKey(sender: UIButton) {
-        if targettingUSTag == 1 || targettingUSTag == 2 || targettingUSTag == 3 {
+        if targettingUSTag == 1 || targettingUSTag == 2 {
             targettingUSTag += 45
+        }else if targettingUSTag == 3 {
+            targettingUSTag += 40
         }else if targettingUSTag == 9 {
             targettingUSTag += 30
         }else {
@@ -287,6 +296,51 @@ class KeyboardViewController: UIInputViewController{
             halfStatus = true
         }
         redrawMarkKeys()
+    }
+    
+    @IBAction func moveUpMarkKey(sender: UIButton) {
+        if targettingMarkTag/9 == 0 {
+            targettingMarkTag += 24
+        }else {
+            targettingMarkTag -= 8
+        }
+        targettingMarkKey = getNextTargetKey(targettingMarkKey, targettingKeys: markKeys, tag:targettingMarkTag)
+        targettingMarkKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func moveDownMarkKey(sender: UIButton) {
+        if targettingMarkTag/25 == 1 {
+            targettingMarkTag -= 24
+        }else {
+            targettingMarkTag += 8
+        }
+        targettingMarkKey = getNextTargetKey(targettingMarkKey, targettingKeys: markKeys, tag:targettingMarkTag)
+        targettingMarkKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func moveLeftMarkKey(sender: UIButton) {
+        if targettingMarkTag%8 == 1 {
+            targettingMarkTag += 7
+        }else {
+            targettingMarkTag--
+        }
+        targettingMarkKey = getNextTargetKey(targettingMarkKey, targettingKeys: markKeys, tag:targettingMarkTag)
+        targettingMarkKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func moveRightMarkKey(sender: UIButton) {
+        if targettingMarkTag%8 == 0 {
+            targettingMarkTag -= 7
+        }else {
+            targettingMarkTag++
+        }
+        targettingMarkKey = getNextTargetKey(targettingMarkKey, targettingKeys: markKeys, tag:targettingMarkTag)
+        targettingMarkKey.backgroundColor = UIColor.grayColor()
+    }
+    
+    @IBAction func submitMarkCharacter(sender: UIButton) {
+        let proxy = self.textDocumentProxy as UITextDocumentProxy
+        proxy.insertText(targettingMarkKey.currentTitle!)
     }
     
     //share key actions
