@@ -132,6 +132,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="K11-TI-W5R"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGp-4m-x9m">
                     <rect key="frame" x="74" y="20" width="50" height="50"/>
@@ -145,6 +148,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="TgV-yR-loz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYk-6Y-yKB">
                     <rect key="frame" x="74" y="81" width="50" height="50"/>
@@ -158,6 +164,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="QVp-WI-IPs"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iA-cD-Q3d">
                     <rect key="frame" x="74" y="139" width="50" height="50"/>
@@ -171,6 +180,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="XvE-Vc-hGr"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDT-tv-rOL">
                     <rect key="frame" x="74" y="197" width="50" height="50"/>
@@ -184,6 +196,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="Px0-2c-aYm"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dti-8A-8kC">
                     <rect key="frame" x="132" y="20" width="50" height="50"/>
@@ -197,6 +212,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="1wv-fm-k5C"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSe-kU-UFH">
                     <rect key="frame" x="132" y="81" width="50" height="50"/>
@@ -210,6 +228,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="830-eF-1HG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yin-6S-NSA">
                     <rect key="frame" x="16" y="81" width="50" height="50"/>
@@ -223,6 +244,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="TrB-jF-so2"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTh-us-eYe">
                     <rect key="frame" x="16" y="139" width="50" height="50"/>
@@ -236,6 +260,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="f2n-QZ-jNp"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aS-IN-co9">
                     <rect key="frame" x="16" y="197" width="50" height="50"/>
@@ -249,6 +276,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="NJA-iO-arO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSe-f2-CCO">
                     <rect key="frame" x="132" y="197" width="50" height="50"/>
@@ -262,6 +292,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="bmd-2G-J0d"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-zf-Khk">
                     <rect key="frame" x="190" y="81" width="50" height="50"/>
@@ -275,6 +308,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="BSR-gj-XL8"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9d-Sv-fbM">
                     <rect key="frame" x="190" y="139" width="50" height="50"/>
@@ -288,6 +324,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="SVT-gz-jwo"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1d-67-s27">
                     <rect key="frame" x="190" y="197" width="50" height="50"/>
@@ -301,6 +340,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="mMa-Zd-Egd"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuT-D9-8Xv">
                     <rect key="frame" x="248" y="20" width="50" height="50"/>
@@ -314,6 +356,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="eTC-xn-uwd"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-cf-gt0">
                     <rect key="frame" x="248" y="81" width="50" height="50"/>
@@ -327,6 +372,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="vBT-Tm-qlV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP8-2X-c8x">
                     <rect key="frame" x="248" y="139" width="50" height="50"/>
@@ -340,6 +388,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="2Zx-9t-PoV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpv-cV-Q8R">
                     <rect key="frame" x="248" y="197" width="50" height="50"/>
@@ -353,6 +404,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="LWw-NK-fyx"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSW-Ie-xyZ">
                     <rect key="frame" x="364" y="20" width="50" height="50"/>
@@ -366,6 +420,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="63U-p3-SZK"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6g-Gq-D04">
                     <rect key="frame" x="306" y="20" width="50" height="50"/>
@@ -379,6 +436,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="R38-zC-g7j"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXf-B4-SfF">
                     <rect key="frame" x="306" y="81" width="50" height="50"/>
@@ -392,6 +452,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="qSC-uU-9DB"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccr-bG-KmX">
                     <rect key="frame" x="364" y="81" width="50" height="50"/>
@@ -405,6 +468,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="P8H-WG-o7Z"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beg-br-rdS">
                     <rect key="frame" x="306" y="139" width="50" height="50"/>
@@ -418,6 +484,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="Uj2-nQ-cwR"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-Pg-l2r">
                     <rect key="frame" x="306" y="197" width="50" height="50"/>
@@ -431,6 +500,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="g3q-fp-X2L"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtJ-h2-mJN">
                     <rect key="frame" x="364" y="139" width="50" height="50"/>
@@ -444,6 +516,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="arA-Xv-5oV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebF-ro-ZQl">
                     <rect key="frame" x="364" y="197" width="50" height="50"/>
@@ -457,6 +532,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="3yb-FD-0ui"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wo0-ct-JXJ">
                     <rect key="frame" x="422" y="20" width="50" height="50"/>
@@ -470,6 +548,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="Xdm-Mg-sy7"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwr-MH-OMh">
                     <rect key="frame" x="190" y="20" width="50" height="50"/>
@@ -483,6 +564,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="iuo-iw-KNQ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwN-Np-Ehb">
                     <rect key="frame" x="422" y="81" width="50" height="50"/>
@@ -496,6 +580,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="GOD-N1-9QL"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-vz-z5A">
                     <rect key="frame" x="422" y="139" width="50" height="50"/>
@@ -509,6 +596,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="4mf-1x-j56"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbn-uA-IXC">
                     <rect key="frame" x="422" y="197" width="50" height="50"/>
@@ -522,6 +612,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="K1q-Hm-jvq"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpO-JO-xmu">
                     <rect key="frame" x="132" y="139" width="50" height="50"/>
@@ -535,6 +628,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inputCharacter:" destination="-1" eventType="touchUpInside" id="z6v-lm-Ish"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
