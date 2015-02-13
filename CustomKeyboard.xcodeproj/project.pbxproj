@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B24783BD1A79C3F300DC35F2 /* MarkKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24783BC1A79C3F300DC35F2 /* MarkKeyView.xib */; };
-		B24783ED1A7B490B00DC35F2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24783EC1A7B490B00DC35F2 /* BaseViewController.swift */; };
-		B2652D891A7DF89000773B0F /* MarkKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2652D881A7DF89000773B0F /* MarkKeyViewController.swift */; };
 		B2E92EE81A77455B008CA80E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92EE71A77455B008CA80E /* AppDelegate.swift */; };
 		B2E92EEA1A77455B008CA80E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92EE91A77455B008CA80E /* ViewController.swift */; };
 		B2E92EED1A77455B008CA80E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E92EEB1A77455B008CA80E /* Main.storyboard */; };
@@ -20,8 +18,6 @@
 		B2E92F131A7748D6008CA80E /* ArrowKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2E92F0B1A7748D6008CA80E /* ArrowKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B2E92F191A7749C6008CA80E /* JPKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E92F181A7749C6008CA80E /* JPKeyView.xib */; };
 		B2E92F1B1A7749D6008CA80E /* USKeyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E92F1A1A7749D6008CA80E /* USKeyView.xib */; };
-		B2E92F211A7754E2008CA80E /* JPKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F201A7754E2008CA80E /* JPKeyViewController.swift */; };
-		B2E92F231A7779F1008CA80E /* USKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E92F221A7779F1008CA80E /* USKeyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +53,6 @@
 
 /* Begin PBXFileReference section */
 		B24783BC1A79C3F300DC35F2 /* MarkKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkKeyView.xib; sourceTree = "<group>"; };
-		B24783EC1A7B490B00DC35F2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		B2652D881A7DF89000773B0F /* MarkKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkKeyViewController.swift; sourceTree = "<group>"; };
 		B2E92EE21A77455B008CA80E /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E92EE61A77455B008CA80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E92EE71A77455B008CA80E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,8 +68,6 @@
 		B2E92F0F1A7748D6008CA80E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		B2E92F181A7749C6008CA80E /* JPKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPKeyView.xib; sourceTree = "<group>"; };
 		B2E92F1A1A7749D6008CA80E /* USKeyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = USKeyView.xib; sourceTree = "<group>"; };
-		B2E92F201A7754E2008CA80E /* JPKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPKeyViewController.swift; sourceTree = "<group>"; };
-		B2E92F221A7779F1008CA80E /* USKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USKeyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,10 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				B2E92F0F1A7748D6008CA80E /* KeyboardViewController.swift */,
-				B24783EC1A7B490B00DC35F2 /* BaseViewController.swift */,
-				B2E92F201A7754E2008CA80E /* JPKeyViewController.swift */,
-				B2E92F221A7779F1008CA80E /* USKeyViewController.swift */,
-				B2652D881A7DF89000773B0F /* MarkKeyViewController.swift */,
 				B2E92F181A7749C6008CA80E /* JPKeyView.xib */,
 				B2E92F1A1A7749D6008CA80E /* USKeyView.xib */,
 				B24783BC1A79C3F300DC35F2 /* MarkKeyView.xib */,
@@ -335,11 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2E92F231A7779F1008CA80E /* USKeyViewController.swift in Sources */,
-				B2652D891A7DF89000773B0F /* MarkKeyViewController.swift in Sources */,
-				B2E92F211A7754E2008CA80E /* JPKeyViewController.swift in Sources */,
 				B2E92F101A7748D6008CA80E /* KeyboardViewController.swift in Sources */,
-				B24783ED1A7B490B00DC35F2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
